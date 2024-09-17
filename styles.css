@@ -79,12 +79,3 @@ h1 {
     transform: translate(-50%, -50%);
     background-size: cover;
 }
-
-.container {
-    position: relative;
-    z-index: 1;
-    /* Ensure content is above the video */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
