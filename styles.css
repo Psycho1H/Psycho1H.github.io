@@ -1,0 +1,33 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ff0000;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+.bio {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #ff0000;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
