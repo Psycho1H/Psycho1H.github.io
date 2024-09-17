@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -20,14 +20,39 @@ h1 {
 
 .bio {
     font-size: 1.2em;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
-.social-icons a {
-    color: #ff0000;
-    transition: color 0.3s;
+
+.twitch {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
 }
 
-.social-icons a:hover {
-    color: #fff;
+.twitch:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+.discord {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.discord:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+.steam {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.steam:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
 }
