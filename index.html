@@ -12,14 +12,15 @@
 <body>
 
     <div class="video-background">
-        <video autoplay loop id="bg-video">
-            <source src="psycho.webm" type="video/mp4">
+        <video autoplay muted loop id="bg-video">
+            <source src="psycho.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
     </div>
     <div class="container text-center my-5">
-        <button id="muteButton">Mute</button>
-        <button id="unmuteButton">Unmute</button>
+        <button id="muteButton"><img src="img/mute.png" alt="mute" class="mute" id="mute">
+            <img src="img/unmute.png" alt="unmute" class="unmute" id="unmute">
+        </button>
         <div class="avatar">
             <img src="img/Avatar.png" alt="Avatar" class="rounded-circle">
         </div>
@@ -42,24 +43,23 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>   document.addEventListener("DOMContentLoaded", function () {
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             const video = document.getElementById('bg-video');
             const muteButton = document.getElementById('muteButton');
-            const unmuteButton = document.getElementById('unmuteButton');
+            const muteimg = document.getElementById('mute');
+            const unmuteimg = document.getElementById('unmute');
 
             muteButton.addEventListener('click', () => {
-                video.muted = true;
-                muteButton.style.display = 'none';
-                unmuteButton.style.display = 'inline';
+                if (video.muted) {
+                    video.muted = false;
+                    muteimg.style.display = "none"
+                } else {
+                    video.muted = true
+                    unmuteimg.style.display = "none"
+                }
             });
-
-            unmuteButton.addEventListener('click', () => {
-                video.muted = false;
-                unmuteButton.style.display = 'none';
-                muteButton.style.display = 'inline';
-            });
-
         });
-
     </script>
 </body>
