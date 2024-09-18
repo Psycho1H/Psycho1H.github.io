@@ -38,6 +38,8 @@ body {
     height: 240px;
     border: 5px solid #ffc595;
     filter: grayscale(40%);
+    user-select: none;
+    pointer-events: none;
 }
 
 h1 {
@@ -71,14 +73,26 @@ h1 {
     }
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-icons img {
     width: 50px;
     height: 50px;
     transition: all 0.3s ease-in-out;
+    user-select: none;
+    pointer-events: none;
 }
 
-.social-icons img:hover {
-    opacity: 0.6;
+.social-icons a {
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    opacity: 0.5;
     transform: scale(.9);
 }
 
@@ -127,8 +141,9 @@ h1 {
 }
 
 #muteButton:hover {
-    opacity: 0.7;
-    transform: scale(1.2);
+    opacity: 0.5;
+    transform: scale(.9);
+    cursor: pointer;
 }
 
 .mute,
@@ -141,12 +156,6 @@ h1 {
 
 .unmute {
     display: none;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
