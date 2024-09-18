@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // load random video from /videos folder
-  const arrayOfVideos = ['PSYCHO.mp4']
+  const arrayOfVideos = ['PSYCHO.mp4', 'apply.mp4', 'Breath.mp4', 'flowless.mp4', 'JujutsuKaisen.mp4', 'onekiss.mp4', 'xxx.mp4']
   const randomVideo = arrayOfVideos[Math.floor(Math.random() * arrayOfVideos.length)];
   console.log(`videos/${randomVideo}`);
   video.src = `videos/${randomVideo}`;
