@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const videoContainer = document.querySelector('.video-background');
   const video = document.getElementById('bg-video');
   const muteButton = document.getElementById('muteButton');
   const muteImg = document.getElementById('mute');
@@ -63,4 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const randomVideo = arrayOfVideos[Math.floor(Math.random() * arrayOfVideos.length)];
   console.log(`videos/${randomVideo}`);
   video.src = `videos/${randomVideo}`;
+
+  video.addEventListener('canplay', function () {
+    videoContainer.classList.add('loaded');
+    video.style.opacity = 1; // Show the video
+  });
 });
