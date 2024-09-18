@@ -123,8 +123,8 @@ h1 {
 #muteButton {
     transition: all 0.3s ease-in-out;
     position: absolute;
-    bottom: 16px;
-    right: 16px;
+    bottom: 24px;
+    right: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
