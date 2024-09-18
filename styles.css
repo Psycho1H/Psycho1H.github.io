@@ -11,13 +11,13 @@ body {
 .avatar img {
     width: 240px;
     height: 240px;
-    border: 5px solid #CD5C3A;
+    border: 5px solid #ffc595;
     filter: grayscale(40%);
 }
 
 h1 {
-    color: #CD5C3A;
-    font-family: 'Verdana';
+    color: #ffc595;
+    font-family: 'fantasy';
     font-size: 34px;
     font-weight: bold;
     font-style: italic;
@@ -25,10 +25,11 @@ h1 {
 
 .bio {
     margin: 32px 0;
-    color: #CD5C3A;
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
+    color: #ffc595;
+    font-family: 'fantasy';
+    font-size: 24px;
     font-weight: bold;
+    font-style: italic;
 }
 
 
