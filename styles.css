@@ -9,9 +9,10 @@ body {
 }
 
 .avatar img {
-    width: 400px;
-    height: 400px;
+    width: 240px;
+    height: 240px;
     border: 5px solid #ff0000;
+    filter: grayscale(100%);
 }
 
 h1 {
