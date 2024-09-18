@@ -1,11 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Video mute button
+
   const video = document.getElementById('bg-video');
   const muteButton = document.getElementById('muteButton');
   const muteImg = document.getElementById('mute');
   const unmuteImg = document.getElementById('unmute');
+  const avatar = document.querySelector('.avatar');
+  const analyzerContainer = document.getElementById('analyzer');
 
+  // Video mute buttons
   muteButton.addEventListener('click', () => {
+    if (video.muted) {
+      video.muted = false;
+      unmuteImg.style.display = "block";
+      muteImg.style.display = "none";
+    } else {
+      video.muted = true;
+      muteImg.style.display = "block";
+      unmuteImg.style.display = "none";
+    }
+  });
+
+  avatar.addEventListener('click', () => {
     if (video.muted) {
       video.muted = false;
       unmuteImg.style.display = "block";
@@ -21,8 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // audio visualizer
-  const analyzerContainer = document.getElementById('analyzer');
-  const avatar = document.querySelector('.avatar');
   new AudioMotionAnalyzer(
     analyzerContainer,
     {
@@ -43,4 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
       source: document.getElementById('bg-video')
     }
   );
+
+
+  // load random video from /videos folder
+  const arrayOfVideos = ['PSYCHO.mp4']
+  const randomVideo = arrayOfVideos[Math.floor(Math.random() * arrayOfVideos.length)];
+  console.log(`videos/${randomVideo}`);
+  video.src = `videos/${randomVideo}`;
 });
