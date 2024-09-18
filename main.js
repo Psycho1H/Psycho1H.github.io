@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     analyzerContainer,
     {
       mode: 3,
-      gradient: 'rainbow',
+      gradient: 'orangered',
       alphaBars: true,
       overlay: true,
       bgAlpha: 0,
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // load random video from /videos folder
-  const arrayOfVideos = ['PSYCHO.mp4']
+  const arrayOfVideos = ['PSYCHO.mp4', 'onekiss.mp4', 'JujutsuKaisen.mp4', 'Breath.mp4', 'xxx.mp4', 'flowless.mp4', 'apply.mp4']
   const randomVideo = arrayOfVideos[Math.floor(Math.random() * arrayOfVideos.length)];
   console.log(`videos/${randomVideo}`);
   video.src = `videos/${randomVideo}`;
