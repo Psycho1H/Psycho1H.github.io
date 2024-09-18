@@ -4,15 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSYCHO_1H</title>
+    <title>PSYCHO_1H - Gamer & Streamer | Live on Twitch & Discord</title>
+    <meta name="description"
+        content="Join PSYCHO_1H, a passionate gamer and streamer. Catch live streams on Twitch, join our Discord server, and follow on social media for the latest updates.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PSYCHO_1H - Gamer & Streamer | Live on Twitch & Discord">
+    <meta property="og:description"
+        content="Join PSYCHO_1H, a passionate gamer and streamer. Catch live streams on Twitch, join our Discord server, and follow on social media for the latest updates.">
+    <meta property="og:image" content="https://psycho.1housee.com/img/Avatar.jpg">
+    <meta property="og:url" content="https://psycho.1housee.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PSYCHO_1H">
+
     <link href="reset.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="favico/favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "PSYCHO_1H",
+          "alternateName": "Yazan",
+          "description": "A passionate gamer and streamer in the 1House family.",
+          "url": "https://psycho.1housee.com",
+          "sameAs": [
+            "https://www.instagram.com/psy_f0/",
+            "https://twitch.tv/PSYCHO_1H",
+            "https://discord.gg/TAHqDcGdUp",
+            "https://steamcommunity.com/profiles/76561199040569589/"
+            ]
+        }
+    </script>
 </head>
 
 <body>
     <div class="video-background">
-        <video autoplay muted loop id="bg-video">
+        <video autoplay muted loop id="bg-video" preload="auto">
             <source class="bg-video-source" src="" type="video/mp4">
         </video>
     </div>
@@ -20,9 +48,8 @@
     <div class="container text-center">
         <div class="analyzer-container">
             <div class="avatar">
-                <img src="img/Avatar.jpg" alt="Avatar" class="rounded-circle">
+                <img src="img/Avatar.jpg" alt="Avatar of PSYCHO_1H" class="rounded-circle">
             </div>
-            <!-- This div will hold the analyzer -->
             <div id="analyzer"></div>
         </div>
 
@@ -32,21 +59,21 @@
 
         <div class="social-icons">
             <a href="https://www.instagram.com/psy_f0/" target="_blank" class="text-decoration-none ml-2">
-                <img src="img/Insta.png" alt="Insta" class="Insta">
+                <img src="img/Insta.png" alt="Instagram Logo" class="Insta">
             </a>
             <a href="https://twitch.tv/PSYCHO_1H" target="_blank" class="text-decoration-none ml-2">
-                <img src="img/twitch.png" alt="twitch" class="twitch">
+                <img src="img/twitch.png" alt="Twitch Logo" class="twitch">
             </a>
             <a href="https://discord.gg/TAHqDcGdUp" target="_blank" class="text-decoration-none ml-2">
-                <img src="img/discord.png" alt="Discord" class="discord">
+                <img src="img/discord.png" alt="Discord Logo" class="discord">
             </a>
             <a href="https://steamcommunity.com/profiles/76561199040569589/" target="_blank"
                 class="text-decoration-none">
-                <img src="img/steam.png" alt="steam" class="steam">
+                <img src="img/steam.png" alt="Steam Logo" class="steam">
             </a>
             <button id="muteButton">
-                <img src="img/mute.png" alt="mute" class="mute" id="mute">
-                <img src="img/unmute.png" alt="unmute" class="unmute" id="unmute" style="display:none;">
+                <img src="img/mute.png" alt="Mute Button" class="mute" id="mute">
+                <img src="img/unmute.png" alt="Unmute Button" class="unmute" id="unmute" style="display:none;">
             </button>
         </div>
     </div>

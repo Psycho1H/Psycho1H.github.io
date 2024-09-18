@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const videoContainer = document.querySelector('.video-background');
   const video = document.getElementById('bg-video');
   const muteButton = document.getElementById('muteButton');
   const muteImg = document.getElementById('mute');
@@ -59,8 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // load random video from /videos folder
-  const arrayOfVideos = ['PSYCHO.mp4', 'onekiss.mp4', 'JujutsuKaisen.mp4', 'Breath.mp4', 'xxx.mp4', 'flowless.mp4', 'apply.mp4']
+  const arrayOfVideos = ['PSYCHO.mp4']
   const randomVideo = arrayOfVideos[Math.floor(Math.random() * arrayOfVideos.length)];
   console.log(`videos/${randomVideo}`);
   video.src = `videos/${randomVideo}`;
+
+  video.addEventListener('canplay', function () {
+    videoContainer.classList.add('loaded');
+    video.style.opacity = 1; // Show the video
+  });
 });
