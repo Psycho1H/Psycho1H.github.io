@@ -17,15 +17,12 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    <div class="container text-center my-5">
-        <button id="muteButton"><img src="img/mute.png" alt="mute" class="mute" id="mute">
-            <img src="img/unmute.png" alt="unmute" class="unmute" id="unmute">
-        </button>
+    <div class="containerr text-center">
         <div class="avatar">
             <img src="img/Avatar.png" alt="Avatar" class="rounded-circle">
         </div>
         <h1 class="mt-3">They Call Me PSYCHO</h1>
-        <p class="bio">Hello! I'm Yazan, a passionate gamer and streamer. Catch me live on Twitch or join my Discord
+        <p class="bio">Hello! I'm Yazan, a passionate gamer and streamer.<br> Catch me live on Twitch or join my Discord
             server!</p>
         <div class="social-icons mt-4">
             <a href="https://twitch.tv/PSYCHO_1H" target="_blank" class="text-decoration-none">
@@ -38,6 +35,10 @@
                 class="text-decoration-none ml-3">
                 <img src="img/steam.png" alt="steam" class="steam">
             </a>
+            <button id="muteButton" class="ml-3">
+                <img src="img/mute.png" alt="mute" class="mute" id="mute">
+                <img src="img/unmute.png" alt="unmute" class="unmute" id="unmute">
+            </button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -54,10 +55,13 @@
             muteButton.addEventListener('click', () => {
                 if (video.muted) {
                     video.muted = false;
-                    muteimg.style.display = "none"
+                    unmuteimg.style.display = "none"
+                    muteimg.style.display = "block"
+
                 } else {
                     video.muted = true
-                    unmuteimg.style.display = "none"
+                    muteimg.style.display = "none"
+                    unmuteimg.style.display = "block"
                 }
             });
         });

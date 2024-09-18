@@ -19,8 +19,8 @@ h1 {
 }
 
 .bio {
-    font-size: 1.2em;
-    margin: 50px 0;
+    font-size: 1.3em;
+    margin: 32px 0;
 }
 
 
@@ -95,14 +95,37 @@ h1 {
 .mute,
 .unmute {
     position: absolute;
-    top: 50px;
-    left: 50px;
+}
+
+.mute {
+    display: none;
 }
 
 #muteButton {
-    position: absolute;
-    top: 50px;
-    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
+    background: none;
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(000, 000, 000, .7);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
