@@ -4,28 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>PSYCHO_1H</title>
+    <link href="reset.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
             <source src="PSYCHO.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="containerr text-center">
+    <div class="container text-center">
         <div class="avatar">
             <img src="img/Avatar.jpg" alt="Avatar" class="rounded-circle">
         </div>
         <h1 class="mt-3">THEY CALL ME<br>PSYCHO</h1>
-        <p class="bio">Ladies and jungle fans<br>I'm Yazan, gamer and streamer in 1House family.<br> Catch me live
-            on
+        <p class="bio">Ladies and jungle fans<br>I'm Yazan, gamer and streamer in 1House family.<br> Catch me live on
             Twitch or join Our Discord server!</p>
         <div class="social-icons mt-4">
-            </a>
             <a href="https://www.instagram.com/psy_f0/" target="_blank" class="text-decoration-none ml-2">
                 <img src="img/Insta.png" alt="Insta" class="Insta">
             </a>
@@ -41,37 +38,33 @@
             </a>
             <button id="muteButton" class="ml-2">
                 <img src="img/mute.png" alt="mute" class="mute" id="mute">
-                <img src="img/unmute.png" alt="unmute" class="unmute" id="unmute">
+                <img src="img/unmute.png" alt="unmute" class="unmute" id="unmute" style="display:none;">
             </button>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const video = document.getElementById('bg-video');
             const muteButton = document.getElementById('muteButton');
-            const muteimg = document.getElementById('mute');
-            const unmuteimg = document.getElementById('unmute');
+            const muteImg = document.getElementById('mute');
+            const unmuteImg = document.getElementById('unmute');
 
             muteButton.addEventListener('click', () => {
                 if (video.muted) {
                     video.muted = false;
-                    unmuteimg.style.display = "none"
-                    muteimg.style.display = "block"
-
+                    unmuteImg.style.display = "none";
+                    muteImg.style.display = "block";
                 } else {
-                    video.muted = true
-                    muteimg.style.display = "none"
-                    unmuteimg.style.display = "block"
+                    video.muted = true;
+                    muteImg.style.display = "none";
+                    unmuteImg.style.display = "block";
                 }
             });
+
+            video.volume = 0.07;
         });
     </script>
-    <script>
-        const video = document.getElementById('bg-video');
-        video.volume = 0.07;
-    </script>
 </body>
+
+</html>
