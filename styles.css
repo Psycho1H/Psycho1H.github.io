@@ -102,6 +102,7 @@ h1 {
 }
 
 #muteButton {
+    transition: all 0.5s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +112,11 @@ h1 {
     border: 0;
     padding: 0;
     outline: none;
+}
+
+#muteButton:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
 }
 
 .social-icons {
