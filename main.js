@@ -32,11 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
       unmuteImg.style.display = "none";
     }
   });
-  // Set the volume to 70% when the page loads
-  video.volume = 0.07;
+
+  video.volume = 0.09;
 
 
-  // audio visualizer
   new AudioMotionAnalyzer(
     analyzerContainer,
     {
@@ -59,14 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
 
-  // load random video from /videos folder
-  const arrayOfVideos = ['PSYCHO.mp4', 'apply.mp4', 'Breath.mp4', 'flowless.mp4', 'JujutsuKaisen.mp4', 'onekiss.mp4', 'xxx.mp4']
+  const arrayOfVideos = ['PSYCHO.mp4', 'apply.mp4', 'JujutsuKaisen.mp4']
   const randomVideo = arrayOfVideos[Math.floor(Math.random() * arrayOfVideos.length)];
   console.log(`videos/${randomVideo}`);
   video.src = `videos/${randomVideo}`;
 
   video.addEventListener('canplay', function () {
     videoContainer.classList.add('loaded');
-    video.style.opacity = 1; // Show the video
+    video.style.opacity = 1;
   });
 });

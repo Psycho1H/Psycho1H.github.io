@@ -222,18 +222,9 @@ h1 {
 
 .toptxt {
     position: absolute;
-    top: 25px;
-    left: 13%;
+    top: 75px;
+    left: 50%;
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
-}
-
-.pss {
-    position: absolute;
-    top: 100px;
-    left: 13%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 13%;
 }
