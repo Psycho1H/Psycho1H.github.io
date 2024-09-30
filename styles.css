@@ -99,6 +99,7 @@ h1 {
     .bio {
         font-size: 18px;
     }
+
 }
 
 .social-icons {
@@ -227,4 +228,44 @@ h1 {
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
+}
+
+.test {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.test a {
+    width: 120px;
+    height: 55px;
+    background-color: #ffc595;
+    border-radius: 10px;
+    display: inherit;
+
+}
+
+@media screen and (max-width: 768px) {
+    .toptxt {
+        position: absolute;
+        top: 35px
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .toptxt {
+        position: absolute;
+        top: 10px
+    }
+
+    .avatar img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .analyzer-container {
+        height: 200px;
+    }
+
 }
